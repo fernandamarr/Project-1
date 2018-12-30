@@ -1,11 +1,12 @@
 body {
     font-family: 'Chewy', cursive;
-    background: lightgrey;
+    background: #618685;
 }
 #jumbo{
     text-align: center;
-    background: black;
-    color: #008CBA;
+    background: #4040a1;
+    color: #fefbd8;
+    font-family: 'Cabin Sketch', cursive;
 }
 
 #form{
@@ -27,7 +28,7 @@ h3 {
 }
 
 a {
-    color: #008CBA;
+    color: #4040a1;
     text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ a {
 
 .add-button, .checkbox {
     padding: 2px 10px 2px 10px;
-    background-color: #008CBA;
+    background-color: #4040a1;
     color: white;
     font-family: 'Chewy', cursive;
     font-size: 12pt;
@@ -61,14 +62,16 @@ a {
 }
 
 #search-movie:active{
-    box-shadow: 0 5px black;
+   
     transform: translateY(4px);
 }
 #search-movie{
     width: 100px;
     height: 35px;
-    box-shadow: 0 10px black;
+    border: 1px solid black;
     border-radius: 25px;
+    background: #fefbd8;
+    color: black;
 }
 
 .results {
@@ -80,11 +83,14 @@ a {
     padding: 10px;
     box-shadow: 15px 15px 15px;
     margin-right: 20px;
+    
 }
 
 .result-img {
     height: 250px;
     margin: 10px 10px 10px 0;
+    box-shadow: 8px 8px 8px;
+    /* padding: 5px; */
 }
 
 .movie-info {
@@ -93,6 +99,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 10px; 
 }
 
 .add-button {
@@ -103,11 +110,15 @@ a {
     margin: 10px;
     height: 250px;
     position: relative;
+    
 
 }
 
 #main-container {
     display: flex;
+    background: #36486b;
+    
+    margin: 0 auto;
 
 }
 
@@ -118,18 +129,20 @@ a {
 #wishlist-container {
     flex: 1;
     background-image: url("../images/linedpaper.png");
-    border-left: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+    border: 2px solid black;
+    /* border-bottom: 2px solid lightgray; */
     padding: 10px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+   
 }
 
 .movie-wish {
     height: 250px;
+    box-shadow: 8px 8px 8px;
 }
 
 .checkbox {
